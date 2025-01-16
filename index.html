@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이곳은 홈페이지입니다</title>
+  <!-- 외부 CSS 파일 연결 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav>
+    <a href="#" onclick="goToHome()">홈</a>
+    <a href="#" onclick="showContent('projectContent')">증</a>
+    <a href="#" onclick="showContent('작Content')">작</a>
+    <a href="#" onclick="showContent('글Content')">글</a>
+    <a href="#" onclick="showContent('끈Content')">끈</a>
+    <a href="#" onclick="showContent('돌Content')">돌</a>
+  </nav>
+
+  <!-- 메뉴 이미지 -->
+  <img
+  class="menu-image"
+  id="menuImage"
+  src="https://github.com/nandarinda/ganmi/blob/main/laydown.png?raw=true"
+  alt="메뉴 이미지"
+  width="700" 
+	/>
+
+  <!-- 컨텐츠들 -->
+  <div class="content" id="projectContent">
+    <p style="font-size: 11px;">
+      <b>project</b><br />
+      <b>2019 &gt;Project RELAY</b>(2018-2019) : 갤러리 Swimming Pool 빅토리아 드라고노바와 국립 미술 아카데미와 1년간 교환 작업 프로젝트.<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&gt;Igloo</b>, 팀 설치 작업, 거주형 설치 프로젝트, Rundgang KHS 마인츠, 독일<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&gt;Performance Night - I'm gonna tell you what happened to me this morning</b>, 퍼포먼스 작업 참여, 갤러리 Swimming Pool, 소피아, 불가리아<br /><br />
+      <b>group</b><br />
+      <b>2021 &gt;Nomads</b>, 라인 드로잉 설치, 이숨요가, 서울<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&gt;U turn</b>, 퍼포머, 설치 및 그룹 퍼포먼스, Kunstlerverein Walkmühle, 비스바덴, 독일<br />
+      <b>2017 &gt;First Step</b>, 드로잉설치, BBK Gallery, Mainz, Germany<br /><br />
+      <b>solo</b><br />
+      <b>2019 &gt;Pray Play</b>, 퍼포먼스 설치, Bungalow, 마인츠, 독일<br /><br>
+      <b>예술교육</b><br />
+      <b>2023 &gt;퐁실퐁실 필링펠팅</b>, 보조강사, 서울<br />
+      <b>2021 &gt;아사나와 함께하는 인체크로키</b>, 미술 워크숍, 이숨요가, 서울
+    </p>
+  </div>
+
+  <div class="content" id="작Content">
+    <p>일이삼사</p>
+  </div>
+
+  <div class="content" id="글Content">
+    <p>오육칠팔</p>
+  </div>
+
+  <div class="content" id="끈Content">
+    <p>구십</p>
+  </div>
+
+  <div class="content" id="돌Content">
+    <p>이십</p>
+  </div>
+
+  <!-- 외부 JS 파일 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>

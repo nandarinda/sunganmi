@@ -1,0 +1,48 @@
+/* body 기본 스타일 */
+body {
+  background-color: #f4f3eb; /* 바뀐 배경색 */
+  color: green; /* 글자색 */
+  font-size: 13pt;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanumgothic', 'Helvetica Neue', Helvetica, Arial, 'sans-serif','NanumGothic', sans-serif;
+  line-height: 1.4; /* 줄 간격 조정 */
+}
+
+/* 문단 스타일 (p) */
+p {
+  margin-bottom: 8px; /* 단락 아래 여백 조정 */
+}
+
+/* 네비게이션 스타일 */
+nav {
+  text-align: left; /* 왼쪽 정렬 */
+  margin-top: 20px;
+  margin-left: 20px; /* 왼쪽 여백 */
+}
+
+/* 네비게이션 링크 스타일 */
+nav a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* 세로로 배치 */
+  margin-bottom: 5px; /* 메뉴 간격 */
+}
+nav a:hover {
+  text-decoration: none;
+  font-weight: bolder; /* 마우스 호버 시 글자 굵기 변경 */
+}
+
+/* 공통 컨텐츠 영역 스타일 */
+.content {
+  text-align: left; /* 왼쪽 정렬 */
+  margin: 0 auto; /* 가로 중앙 배치용(하지만 margin-left로 덮이긴 함) */
+  max-width: 600px; /* 최대 폭 설정 */
+  padding: 20px; /* 내용 주위 여백 */
+  margin-top: 50px;
+  margin-left: 20px; /* 왼쪽 여백 */
+  display: none; /* 처음엔 숨김 */
+  font-weight: normal; /* 기본 글자 굵기 */
+}
+
