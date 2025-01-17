@@ -1,127 +1,97 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이곳은 홈페이지 입니다</title>
-    <style>
-        body {
-            background-color: #eeccdd; /* 바뀐 배경색 */
-            color: green; /* 초록색 */
-            font-size: 13pt;
-            font-weight: bolder;
-            margin: 0;
-            padding: 0;
-            font-family: 'NanumMyeongjo','Myeongjo','NanumGothic', serif;
-            line-height: 1.4; /* 줄 간격 조정 */
-        }
-        p {
-            margin-bottom: 8px; /* 단락 아래 여백 조정 */
-        }
-        nav {
-            text-align: left; /* 왼쪽 정렬로 변경 */
-            margin-top: 20px;
-            margin-left: 20px; /* 왼쪽 여백 추가 */
-        }
-        nav a {
-            text-decoration: none;
-            color: inherit;
-            display: block; /* 메뉴를 세로로 배치 */
-            margin-bottom: 5px; /* 메뉴 간격 조정 */
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            text-align: left; /* 내용을 왼쪽 정렬로 변경 */
-            margin: 0 auto; /* 가운데 정렬 취소 */
-            max-width: 600px; /* 최대 폭 설정 */
-            padding: 20px; /* 내용 주위에 여백 추가 */
-            margin-top: 50px;
-            margin-left: 20px; /* 왼쪽 여백 추가 */
-            display: none; /* 기본적으로 숨겨진 상태 */
-            font-weight: normal; /* 글자 스타일을 regular로 변경 */
-        }
-        /* 이미지를 왼쪽에 배치하는 스타일 */
-        .menu-image {
-            float: left; /* 왼쪽으로 배치 */
-            margin-right: 10px; /* 오른쪽 여백 추가 */
-            margin-top: 5px; /* 상단 여백 추가 */
-            width: 150px; /* 이미지 너비 조정 */
-            height: auto; /* 이미지 높이 자동 조정 */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이곳은 홈페이지입니다</title>
+  <!-- 외부 CSS 파일 연결 -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <a href="#" onclick="goToHome()">홈</a>
-        <a href="#" onclick="showContent('projectContent')">증</a>
-        <a href="#" onclick="showContent('작Content')">작</a>
-        <a href="#" onclick="showContent('글Content')">글</a>
-        <a href="#" onclick="showContent('끈Content')">끈</a>
-        <a href="#" onclick="showContent('돌Content')">돌</a>
-    </nav>
-    <!-- 이미지 추가 -->
-    <img class="menu-image" id="menuImage" src="https://postfiles.pstatic.net/MjAyNDAzMDVfMTQ5/MDAxNzA5NTY2Nzg4MzAx.ew6CY7QJ_C8yW3hnDEkF7MQ1nIHwhwlZE8-z_uPYj9Ig.ZbN8Y_yMepB5qxePM-SkSNMkzTztsFvZLYJ6BWSHOy8g.PNG/i_draw2.png?type=w966" alt="메뉴 이미지">
+  <!-- 네비게이션 -->
+  <nav>
+    <a href="#" onclick="goToHome()">홈</a>
+    <a href="#" onclick="showContent('projectContent')">증</a>
+    <a href="#" onclick="showContent('작Content')">작</a>
+    <a href="#" onclick="showContent('글Content')">글</a>
+    <a href="#" onclick="showContent('끈Content')">끈</a>
+    <a href="#" onclick="showContent('돌Content')">돌</a>
+  </nav>
 
-    <div class="content" id="projectContent">
-        <p>+project<br>
-        2019년 ></p>
-    </div>
-    <div class="content" id="작Content">
-        <p>일이삼사</p>
-    </div>
-    <div class="content" id="글Content">
-        <p>오육칠팔</p>
-    </div>
-    <div class="content" id="끈Content">
-        <p>구십</p>
-    </div>
-    <div class="content" id="돌Content">
-        <p>이십</p>
-    </div>
-    
-    <script>
-        // 이미지 숨기는 함수
-        function hideImage() {
-            var image = document.getElementById('menuImage');
-            image.style.display = 'none';
-        }
-        
-        // 이미지 보여주는 함수
-        function showImage() {
-            var image = document.getElementById('menuImage');
-            image.style.display = 'block';
-        }
+  <!-- 메뉴 이미지 -->
+  <img
+  class="menu-image"
+  id="menuImage"
+  src="https://github.com/nandarinda/ganmi/blob/main/laydown.png?raw=true"
+  alt="메뉴 이미지"
+  width="700" 
+	/>
 
-        // 컨텐츠 보여주는 함수
-        function showContent(id) {
-            var contents = document.querySelectorAll('.content');
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = 'none';
-            }
-            document.getElementById(id).style.display = 'block';
-            hideImage(); // 컨텐츠가 표시될 때 이미지 숨기기
-        }
+  <!-- 컨텐츠들 -->
+  <div class="content" id="projectContent">
+    <p style="font-size: 11px;">
+      <b>project</b><br />
+      <b>2019 &gt;Project RELAY</b>(2018-2019) : 갤러리 Swimming Pool 빅토리아 드라고노바와 국립 미술 아카데미와 1년간 교환 작업 프로젝트.<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&gt;Igloo</b>, 팀 설치 작업, 거주형 설치 프로젝트, Rundgang KHS 마인츠, 독일<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&gt;Performance Night - I'm gonna tell you what happened to me this morning</b>, 퍼포먼스 작업 참여, 갤러리 Swimming Pool, 소피아, 불가리아<br /><br />
+      <b>group</b><br />
+      <b>2021 &gt;Nomads</b>, 라인 드로잉 설치, 이숨요가, 서울<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&gt;U turn</b>, 퍼포머, 설치 및 그룹 퍼포먼스, Kunstlerverein Walkmühle, 비스바덴, 독일<br />
+      <b>2017 &gt;First Step</b>, 드로잉설치, BBK Gallery, Mainz, Germany<br /><br />
+      <b>solo</b><br />
+      <b>2019 &gt;Pray Play</b>, 퍼포먼스 설치, Bungalow, 마인츠, 독일<br /><br>
+      <b>workshop/education </b><br />
+      <b>2023 &gt;퐁실퐁실 필링펠팅</b>, 보조강사, 서울<br />
+      <b>2021 &gt;아사나와 함께하는 인체크로키</b>, 미술 워크숍, 이숨요가, 서울
+    </p>
+  </div>
 
-        // 홈으로 이동하는 함수
-        function goToHome() {
-            showImage(); // 이미지 보이기
-            var contents = document.querySelectorAll('.content');
-            for (var i = 0; i < contents.length; i++) {
-                contents[i].style.display = 'none'; // 모든 컨텐츠 숨기기
-            }
-        }
-    </script>
+  <div class="content" id="작Content">
+    <p><img src="https://github.com/nandarinda/ganmi/blob/main/I'm%20gonna%20tell.png?raw=true"
+			width="900"/>I'm gonna tell you what happened to me this morging, 2019
+		<br><br><br><br><br><br><br><br><br><img src="https://github.com/nandarinda/ganmi/blob/main/pray%20play.png?raw=true"
+				 width="900"/>Pray Play, 2019
+		<br><br><br><br><br><br><br><br><br><img src="https://github.com/nandarinda/ganmi/blob/main/i%20really%20want.png?raw=true"
+				 width="900"/>I really want you to like me, 2017
+		<br><br><br><br><br><br><br><br><br><img src="https://github.com/nandarinda/ganmi/blob/main/idoalittle.png?raw=true"
+				 width="900"/>drawings
+	   </p>
+  </div>
+
+  <div class="content" id="글Content">
+    <p style="font-size: 11px;">나는 조금 한다.<br><br>
+		나는 조금 신실하고<br>
+조금 위선자다<br>
+나는 조금 잘하고<br>
+조금 이상하다<br>
+나는 조금 춥다<br>
+나는 조금 심심하다<br>
+나는 조금 걱정이다<br>
+조금 늦게 일어났다<br>
+나는 조금 일한다<br>
+조금 돕고<br>
+조금 많이 먹는다<br>
+나는 조금 확신한다<br>
+너를 조금 사랑한다<br>
+나는 조금 운동한다<br>
+나는 조금 작업 한다<br>
+나는 너를 조금 신뢰하고<br>
+조금 보고싶다<br>
+나는 조금 작고<br>
+조금 졸리다<br><br>
+	  </p>
+  </div>
+
+  <div class="content" id="끈Content">
+    <p style="font-size: 12px;"><a href="https://smartstore.naver.com/nandarinda">https://smartstore.naver.com/nandarinda</a><br>
+	  <a href="https://sunganaemi.tistory.com">https://sunganaemi.tistory.com</a></p>
+  </div>
+
+  <div class="content" id="돌Content">
+    <p>구십</p>
+  </div>
+
+  <!-- 외부 JS 파일 연결 -->
+  <script src="script.js"></script>
 </body>
 </html>
